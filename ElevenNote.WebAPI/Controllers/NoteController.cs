@@ -11,7 +11,7 @@ using System.Web.Http;
 namespace ElevenNote.WebAPI.Controllers
 {
     [Authorize]
-    public class NoteController : ApiController
+    public class NoteController : ApiController  //Make a category controller similar to this, see photo of Erick's
     {
         public IHttpActionResult Get()
         {

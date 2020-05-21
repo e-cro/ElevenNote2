@@ -17,5 +17,11 @@ namespace ElevenNote.Models
         [MinLength(1, ErrorMessage ="Must contain at least 1 character")]
         [MaxLength(8000, ErrorMessage ="Maximum length is 8,000 characters")]
         public string Content { get; set; }
+
+        [Display(Name = "Date Created")]
+        public DateTimeOffset CreatedUtc { get; set; }
+        [Display(Name ="Category Name")]
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
     }
 }
